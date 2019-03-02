@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { TarefasComponent } from './tarefas/tarefas.component';
 import { TarefaComponent } from './tarefas/tarefa/tarefa.component';
 import { TarefaListComponent } from './tarefas/tarefa-list/tarefa-list.component';
+import { TarefaService } from './shared/tarefa.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { TarefaListComponent } from './tarefas/tarefa-list/tarefa-list.component
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [TarefaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
